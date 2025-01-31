@@ -164,13 +164,5 @@ The `docker-compose.yml` file sets up the entire observability stack:
 
 ---
 
-## Testing
-Run tests using:
-```bash
-./mvnw test
-```
-
----
-
 ## License
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
