@@ -115,39 +115,6 @@ Grafana data sources are pre-configured in `docker/grafana/datasource.yml`.
 
 ---
 
-## Development
-
-### Run Locally
-To run the application locally:
-```bash
-./mvnw spring-boot:run
-```
-
-Access the application at `http://localhost:8080`.
-
-### H2 Console
-Access the H2 database console at `http://localhost:8080/h2-console`.
-
----
-
-## Docker Setup
-
-### Dockerfile
-The `Dockerfile` builds the Spring Boot application:
-```dockerfile
-FROM maven:3.8.5-openjdk-17-slim AS build
-WORKDIR /app
-COPY pom.xml .
-COPY src ./src
-RUN mvn clean package -DskipTests
-
-FROM openjdk:17-jdk-slim
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
-```
-
 ### Docker Compose
 The `docker-compose.yml` file sets up the entire observability stack:
 - Spring Boot application
@@ -157,6 +124,3 @@ The `docker-compose.yml` file sets up the entire observability stack:
 - Loki
 
 ---
-
-## License
-This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
