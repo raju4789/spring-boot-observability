@@ -3,7 +3,7 @@
 Demo Spring Boot application showcasing integration with the Grafana observability stack.
 
 ## Features
-- **Spring Boot** application with REST API to manage items.
+- **Spring Boot** application with dummy REST API to send some logs and traces.
 - **Observability** using Prometheus, Grafana, Tempo, and Loki.
 - **Dockerized** setup with `Dockerfile` and `docker-compose.yml`.
 - **H2 Database** for in-memory data storage.
@@ -25,13 +25,7 @@ git clone https://github.com/raju4789/spring-boot-observability.git
 cd spring-boot-observability
 ```
 
-### 2. Build the Application
-To build the application locally:
-```bash
-./mvnw clean package -DskipTests
-```
-
-### 3. Run with Docker Compose
+### 2. Run with Docker Compose
 To start the application and observability stack:
 ```bash
 docker-compose up --build
@@ -46,7 +40,7 @@ This will start the following services:
 
 ---
 
-## API Endpoints
+## API Endpoints(Just created to send some metrics, logs and traces for testing)
 ### Items API
 - **GET /api/items**: Fetch all items.
 
