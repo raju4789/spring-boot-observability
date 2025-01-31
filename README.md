@@ -118,15 +118,15 @@ Grafana data sources are pre-configured in `docker/grafana/provisioning/datasour
 
 ---
 
-### Results
-## Loki
+## Results
+### Loki
 <img width="1728" alt="Screenshot 2568-01-31 at 21 37 37" src="https://github.com/user-attachments/assets/cf069982-bf9c-4777-9fe5-58649301d718" />
 
-## Tempo
+### Tempo
 
 <img width="1727" alt="Screenshot 2568-01-31 at 21 39 58" src="https://github.com/user-attachments/assets/8a2590a4-bb45-457c-a1a3-fceeca8210d3" />
 
-## Prometheus
+### Prometheus
 
 <img width="1722" alt="Screenshot 2568-01-31 at 21 41 50" src="https://github.com/user-attachments/assets/2d1244ae-38a4-4808-a29e-20b02edf1a74" />
 
