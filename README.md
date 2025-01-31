@@ -111,7 +111,7 @@ scrape_configs:
 ```
 
 ### Grafana Configuration
-Grafana data sources are pre-configured in `docker/grafana/datasource.yml`.
+Grafana data sources are pre-configured in `docker/grafana/provisioning/datasources/datasource.yml`.
 
 <img width="1727" alt="Screenshot 2568-01-31 at 23 01 01" src="https://github.com/user-attachments/assets/73a98927-a612-48ad-ad04-c24910de9ea2" />
 
